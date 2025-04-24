@@ -122,6 +122,7 @@ public class Naukri extends Setup {
 
             List<WebElement> keySkillsCloseBtn = driver.findElements(By.cssSelector(".material-icons.close"));
             cssClick("#saveKeySkills");
+            screenshot(driver);
             cssElementToBeVisible(".msgBox.success i");
             driver.findElement(By.cssSelector(".mod-date")).getText().equals("Profile last updated - Today");
             System.out.println("<==== Skills Updated Successfully ====>");
