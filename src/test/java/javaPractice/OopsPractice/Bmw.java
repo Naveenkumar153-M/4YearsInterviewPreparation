@@ -1,4 +1,4 @@
-package javaPractice;
+package javaPractice.OopsPractice;
 
 public class Bmw extends Car{
 

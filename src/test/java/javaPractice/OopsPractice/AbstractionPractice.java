@@ -1,4 +1,4 @@
-package javaPractice;
+package javaPractice.OopsPractice;
 
 public abstract class AbstractionPractice {
 
