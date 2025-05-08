@@ -1,4 +1,6 @@
-package javaPractice;
+package javaPractice.OopsPractice;
+
+import javaPractice.Collection.Company;
 
 public class abstractionClass extends AbstractionPractice implements Company {
 

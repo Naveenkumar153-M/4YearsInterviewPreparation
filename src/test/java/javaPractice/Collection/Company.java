@@ -1,4 +1,4 @@
-package javaPractice;
+package javaPractice.Collection;
 
 public interface Company {
 

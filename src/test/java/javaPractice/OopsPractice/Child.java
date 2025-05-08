@@ -1,6 +1,6 @@
-package javaPractice;
+package javaPractice.OopsPractice;
 
-public class Child extends Parent{
+public class Child extends Parent {
 
     @Override
     public void property(String land){
