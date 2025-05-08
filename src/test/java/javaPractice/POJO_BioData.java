@@ -15,44 +15,44 @@ public class POJO_BioData {
     private List skills;
 
 
-//    public void setFirstName(String firstName){
-//    this.firstName=firstName;
-//    }
-//
-//    public String getFirstName(){
-//        return firstName;
-//    }
-//
-//    public void setLastName(String lastName){
-//        this.lastName=lastName;
-//    }
-//
-//    public String getLastName(){
-//        return lastName;
-//    }
-//
-//    public void setDob(String dob){
-//        this.dob=dob;
-//    }
-//
-//    public String getDob(){
-//        return dob;
-//    }
-//
-//    public void setMobileNumber(long mobileNumber){
-//        this.mobileNumber=mobileNumber;
-//    }
-//
-//    public long getMobileNumber(){
-//        return mobileNumber;
-//    }
-//
-//    public void setSkills(List skills){
-//        this.skills=skills;
-//    }
-//
-//    public List getSkills(){
-//        return skills;
-//    }
+    public void setFirstName(String firstName){
+    this.firstName=firstName;
+    }
+
+    public String getFirstName(){
+        return firstName;
+    }
+
+    public void setLastName(String lastName){
+        this.lastName=lastName;
+    }
+
+    public String getLastName(){
+        return lastName;
+    }
+
+    public void setDob(String dob){
+        this.dob=dob;
+    }
+
+    public String getDob(){
+        return dob;
+    }
+
+    public void setMobileNumber(long mobileNumber){
+        this.mobileNumber=mobileNumber;
+    }
+
+    public long getMobileNumber(){
+        return mobileNumber;
+    }
+
+    public void setSkills(List skills){
+        this.skills=skills;
+    }
+
+    public List getSkills(){
+        return skills;
+    }
 }
 

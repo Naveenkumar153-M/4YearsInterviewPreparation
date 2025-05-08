@@ -8,23 +8,18 @@ public class POJO_BioData_Values {
 
         POJO_BioData bioData=new POJO_BioData();
 
-        System.out.println(bioData.getMobileNumber());
+        bioData.setFirstName("Naveenkumar");
+        bioData.setLastName("M");
+        bioData.setDob("15.03.1998");
         bioData.setMobileNumber(8508250272L);
+        bioData.setSkills(Arrays.asList("Java","Selenium"));
+
+        System.out.println(bioData.getFirstName());
+        System.out.println(bioData.getLastName());
+        System.out.println(bioData.getDob());
         System.out.println(bioData.getMobileNumber());
-
-
-//        bioData.setFirstName("Naveenkumar");
-//        bioData.setLastName("M");
-//        bioData.setDob("15.03.1998");
-//        bioData.setMobileNumber(8508250272L);
-//        bioData.setSkills(Arrays.asList("Java","Selenium"));
-//
-//        System.out.println(bioData.getFirstName());
-//        System.out.println(bioData.getLastName());
-//        System.out.println(bioData.getDob());
-//        System.out.println(bioData.getMobileNumber());
-//        System.out.println(bioData.getMobileNumber());
-//        System.out.println(bioData.getSkills());
+        System.out.println(bioData.getMobileNumber());
+        System.out.println(bioData.getSkills());
 
     }
 }

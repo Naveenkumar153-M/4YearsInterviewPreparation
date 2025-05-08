@@ -22,29 +22,20 @@ public class LoginTest {
         values.setPassword("Naveen@123");
         values.setBaseUrl("https://graphicsflowqaapi.azurewebsites.net/");
     }
-//    static String baseUrl = "";
-//    static String path = "users/Login";
-//    protected static String token =null;
-//    protected static String organizationId =null;
 
-//    static String baseUrl = "https://graphicsflowqaapi.azurewebsites.net/";
-//    static String path = "users/Login";
-//    protected static String token =null;
-//    protected static String organizationId =null;
+    @Test
+    public static void loginWithNonBdd() {
+        RestAssured.baseURI = values.getBaseUrl();
 
-//    @Test
-//    public static void login() {
-//        RestAssured.baseURI = values.getBaseUrl();
-//
-//        RequestSpecification specification = RestAssured.given()
-//                .header("accept", "application/json")
-//                .multiPart("Email", values.getUserName())
-//                .multiPart("password", values.getPassword()).log().all();
-//        Response response = specification.request(Method.POST, values.getPath());
-//        response.statusCode();
-//
-//        System.out.println("Response: " + response.asPrettyString());
-//    }
+        RequestSpecification specification = RestAssured.given()
+                .header("accept", "application/json")
+                .multiPart("Email", values.getUserName())
+                .multiPart("password", values.getPassword()).log().all();
+        Response response = specification.request(Method.POST, values.getPath());
+        response.statusCode();
+
+        System.out.println("Response: " + response.asPrettyString());
+    }
 
     @BeforeClass
     public static void login() {
@@ -60,11 +51,6 @@ public class LoginTest {
         System.out.println("Session Token : "+ values.getToken());
         values.setOrganizationId(response.jsonPath().getString("data.organizations[0].organizationId"));
         System.out.println("Organization ID of the Login User : "+ values.getOrganizationId());
-
-    }
-
-    @Test
-    public void test() {
 
     }
 }
