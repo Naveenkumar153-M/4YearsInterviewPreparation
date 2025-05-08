@@ -11,8 +11,6 @@ import static io.restassured.RestAssured.*;
 
 public class ArtApproval extends LoginTest {
 
-//    static String path = values.getOrganizationId()+"/artapproval/CreateArtApproval";
-
     @Test
     public void createArtApproval(){
          values.setPath(values.getOrganizationId()+"/artapproval/CreateArtApproval");
@@ -32,8 +30,6 @@ public class ArtApproval extends LoginTest {
         System.out.println("Created Art Approval Response "+response.asPrettyString());
         System.out.println(response.statusLine());
         System.out.println(response.jsonPath().getString("data.createdBy"));
-
-
 
 
     }
