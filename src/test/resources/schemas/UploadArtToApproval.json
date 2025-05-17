@@ -1,0 +1,381 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "artApproval": {
+          "type": "object",
+          "properties": {
+            "artApprovalId": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "assigneeId": {
+              "type": "string"
+            },
+            "watermarkEnabled": {
+              "type": "boolean"
+            },
+            "comments": {
+              "type": "array",
+              "items": {}
+            },
+            "sections": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "artApprovalSectionId": {
+                    "type": "string"
+                  },
+                  "items": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "artApprovalItemId": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "artId": {
+                          "type": "string"
+                        },
+                        "comments": {
+                          "type": "array",
+                          "items": {}
+                        },
+                        "sortOrder": {
+                          "type": "number"
+                        },
+                        "isOriginal": {
+                          "type": "boolean"
+                        },
+                        "isNewest": {
+                          "type": "boolean"
+                        },
+                        "itemGroupStatus": {
+                          "type": "string"
+                        },
+                        "versions": {
+                          "type": "array",
+                          "items": {}
+                        },
+                        "deleted": {
+                          "type": "boolean"
+                        },
+                        "createdBy": {
+                          "type": "string"
+                        },
+                        "createdDate": {
+                          "type": "string"
+                        },
+                        "modifiedBy": {
+                          "type": "string"
+                        },
+                        "modifiedDate": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "artApprovalItemId",
+                        "name",
+                        "artId",
+                        "comments",
+                        "sortOrder",
+                        "isOriginal",
+                        "isNewest",
+                        "itemGroupStatus",
+                        "versions",
+                        "deleted",
+                        "createdBy",
+                        "createdDate",
+                        "modifiedBy",
+                        "modifiedDate"
+                      ]
+                    }
+                  },
+                  "deleted": {
+                    "type": "boolean"
+                  },
+                  "createdBy": {
+                    "type": "string"
+                  },
+                  "createdDate": {
+                    "type": "string"
+                  },
+                  "modifiedBy": {
+                    "type": "string"
+                  },
+                  "modifiedDate": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "artApprovalSectionId",
+                  "items",
+                  "deleted",
+                  "createdBy",
+                  "createdDate",
+                  "modifiedBy",
+                  "modifiedDate"
+                ]
+              }
+            },
+            "shareableCollaboratorLinkId": {
+              "type": "string"
+            },
+            "shareableLinkPermission": {
+              "type": "string"
+            },
+            "internalNotes": {
+              "type": "object",
+              "properties": {},
+              "required": []
+            },
+            "timelineEvents": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "eventId": {
+                    "type": "string"
+                  },
+                  "eventType": {
+                    "type": "string"
+                  },
+                  "createdByName": {
+                    "type": "string"
+                  },
+                  "artApprovalId": {
+                    "type": "string"
+                  },
+                  "artApprovalName": {
+                    "type": "string"
+                  },
+                  "artApprovalItemId": {
+                    "type": "string"
+                  },
+                  "artApprovalItemName": {
+                    "type": "string"
+                  },
+                  "assignedOrganizationId": {
+                    "type": "string"
+                  },
+                  "deleted": {
+                    "type": "boolean"
+                  },
+                  "createdBy": {
+                    "type": "string"
+                  },
+                  "createdDate": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "eventId",
+                  "eventType",
+                  "createdByName",
+                  "artApprovalId",
+                  "artApprovalName",
+                  "artApprovalItemId",
+                  "artApprovalItemName",
+                  "assignedOrganizationId",
+                  "deleted",
+                  "createdBy",
+                  "createdDate"
+                ]
+              }
+            },
+            "assignedOrganizationId": {
+              "type": "string"
+            },
+            "deleted": {
+              "type": "boolean"
+            },
+            "createdBy": {
+              "type": "string"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "modifiedBy": {
+              "type": "string"
+            },
+            "modifiedDate": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "artApprovalId",
+            "status",
+            "name",
+            "assigneeId",
+            "watermarkEnabled",
+            "comments",
+            "sections",
+            "shareableCollaboratorLinkId",
+            "shareableLinkPermission",
+            "internalNotes",
+            "timelineEvents",
+            "assignedOrganizationId",
+            "deleted",
+            "createdBy",
+            "createdDate",
+            "modifiedBy",
+            "modifiedDate"
+          ]
+        },
+        "art": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "artId": {
+                "type": "string"
+              },
+              "assetId": {
+                "type": "string"
+              },
+              "artApprovalId": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "fileName": {
+                "type": "string"
+              },
+              "outDated": {
+                "type": "boolean"
+              },
+              "versionNumber": {
+                "type": "number"
+              },
+              "tags": {
+                "type": "array",
+                "items": {}
+              },
+              "artExtensions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "extension": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "number"
+                    },
+                    "width": {
+                      "type": "number"
+                    },
+                    "memorySize": {
+                      "type": "number"
+                    },
+                    "waterMarkId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "extension",
+                    "memorySize"
+                  ]
+                }
+              },
+              "fileStorageUsage": {
+                "type": "number"
+              },
+              "purged": {
+                "type": "boolean"
+              },
+              "isProfileArt": {
+                "type": "boolean"
+              },
+              "trashed": {
+                "type": "boolean"
+              },
+              "showInArtPortal": {
+                "type": "boolean"
+              },
+              "isFavorite": {
+                "type": "boolean"
+              },
+              "assignedOrganizationId": {
+                "type": "string"
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "createdBy": {
+                "type": "string"
+              },
+              "createdDate": {
+                "type": "string"
+              },
+              "modifiedBy": {
+                "type": "string"
+              },
+              "modifiedDate": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "artId",
+              "assetId",
+              "artApprovalId",
+              "name",
+              "fileName",
+              "outDated",
+              "versionNumber",
+              "tags",
+              "artExtensions",
+              "fileStorageUsage",
+              "purged",
+              "isProfileArt",
+              "trashed",
+              "showInArtPortal",
+              "isFavorite",
+              "assignedOrganizationId",
+              "deleted",
+              "createdBy",
+              "createdDate",
+              "modifiedBy",
+              "modifiedDate"
+            ]
+          }
+        },
+        "commentUsers": {
+          "type": "array",
+          "items": {}
+        },
+        "commentCollaborators": {
+          "type": "array",
+          "items": {}
+        }
+      },
+      "required": [
+        "artApproval",
+        "art",
+        "commentUsers",
+        "commentCollaborators"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

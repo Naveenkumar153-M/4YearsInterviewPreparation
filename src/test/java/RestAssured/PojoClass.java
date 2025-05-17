@@ -13,5 +13,8 @@ public class PojoClass {
     private String organizationId ;
     private String userName;
     private String password;
+    private String artApprovalId;
+    private String contentType="application/json";
+
 
 }
