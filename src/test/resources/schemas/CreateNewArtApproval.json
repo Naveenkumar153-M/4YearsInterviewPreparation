@@ -1,0 +1,163 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Create Art Approval schema ",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "artApprovalId": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "assigneeId": {
+          "type": "string"
+        },
+        "watermarkEnabled": {
+          "type": "boolean"
+        },
+        "comments": {
+          "type": "array",
+          "items": {}
+        },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "artApprovalSectionId": {
+                "type": "string"
+              },
+              "items": {
+                "type": "array",
+                "items": {}
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "createdBy": {
+                "type": "string"
+              },
+              "createdDate": {
+                "type": "string"
+              },
+              "modifiedBy": {
+                "type": "string"
+              },
+              "modifiedDate": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "artApprovalSectionId",
+              "items",
+              "deleted",
+              "createdBy",
+              "createdDate",
+              "modifiedBy",
+              "modifiedDate"
+            ]
+          }
+        },
+        "shareableCollaboratorLinkId": {
+          "type": "string"
+        },
+        "internalNotes": {
+          "type": "object",
+          "properties": {},
+          "required": []
+        },
+        "timelineEvents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "eventId": {
+                "type": "string"
+              },
+              "eventType": {
+                "type": "string"
+              },
+              "createdByName": {
+                "type": "string"
+              },
+              "artApprovalId": {
+                "type": "string"
+              },
+              "artApprovalName": {
+                "type": "string"
+              },
+              "assignedOrganizationId": {
+                "type": "string"
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "createdBy": {
+                "type": "string"
+              },
+              "createdDate": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "eventId",
+              "eventType",
+              "createdByName",
+              "artApprovalId",
+              "artApprovalName",
+              "assignedOrganizationId",
+              "deleted",
+              "createdBy",
+              "createdDate"
+            ]
+          }
+        },
+        "assignedOrganizationId": {
+          "type": "string"
+        },
+        "deleted": {
+          "type": "boolean"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "createdDate": {
+          "type": "string"
+        },
+        "modifiedBy": {
+          "type": "string"
+        },
+        "modifiedDate": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "artApprovalId",
+        "status",
+        "name",
+        "assigneeId",
+        "watermarkEnabled",
+        "comments",
+        "sections",
+        "shareableCollaboratorLinkId",
+        "internalNotes",
+        "timelineEvents",
+        "assignedOrganizationId",
+        "deleted",
+        "createdBy",
+        "createdDate",
+        "modifiedBy",
+        "modifiedDate"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

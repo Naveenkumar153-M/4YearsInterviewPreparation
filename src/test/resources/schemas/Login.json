@@ -1,0 +1,617 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Login Response Schema",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "loggedInUser": {
+          "type": "object",
+          "properties": {
+            "userId": {
+              "type": "string"
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "phoneNumber": {
+              "type": "string"
+            },
+            "token": {
+              "type": "string"
+            },
+            "profileArtGuid": {
+              "type": "string"
+            },
+            "profileArtOrgId": {
+              "type": "string"
+            },
+            "profileAssetGuid": {
+              "type": "string"
+            },
+            "profileAssetExts": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "extension": {
+                    "type": "string"
+                  },
+                  "height": {
+                    "type": "number"
+                  },
+                  "width": {
+                    "type": "number"
+                  },
+                  "memorySize": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "name",
+                  "extension",
+                  "height",
+                  "width",
+                  "memorySize"
+                ]
+              }
+            },
+            "associatedOrganizations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "organizationId": {
+                    "type": "string"
+                  },
+                  "role": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "organizationId",
+                  "role"
+                ]
+              }
+            },
+            "isFirstLogin": {
+              "type": "boolean"
+            },
+            "subscriptionStatus": {
+              "type": "string"
+            },
+            "hubspotContactId": {
+              "type": "string"
+            },
+            "isBillingAddressRequired": {
+              "type": "boolean"
+            },
+            "receivedDesignRequest": {
+              "type": "boolean"
+            },
+            "showCSADemo": {
+              "type": "boolean"
+            },
+            "departmentRole": {
+              "type": "string"
+            },
+            "switchColorProfileDisclaimer": {
+              "type": "object",
+              "properties": {
+                "showCMYKDisclaimer": {
+                  "type": "boolean"
+                },
+                "showRGBDisclaimer": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "showCMYKDisclaimer",
+                "showRGBDisclaimer"
+              ]
+            },
+            "assignedOrganizationId": {
+              "type": "string"
+            },
+            "deleted": {
+              "type": "boolean"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "modifiedBy": {
+              "type": "string"
+            },
+            "modifiedDate": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "userId",
+            "firstName",
+            "lastName",
+            "email",
+            "phoneNumber",
+            "token",
+            "profileArtGuid",
+            "profileArtOrgId",
+            "profileAssetGuid",
+            "profileAssetExts",
+            "associatedOrganizations",
+            "isFirstLogin",
+            "subscriptionStatus",
+            "hubspotContactId",
+            "isBillingAddressRequired",
+            "receivedDesignRequest",
+            "showCSADemo",
+            "departmentRole",
+            "switchColorProfileDisclaimer",
+            "assignedOrganizationId",
+            "deleted",
+            "createdDate",
+            "modifiedBy",
+            "modifiedDate"
+          ]
+        },
+        "organizations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "organizationId": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "uri": {
+                "type": "string"
+              },
+              "organizationColorDisclaimer": {
+                "type": "string"
+              },
+              "termsAndConditions": {
+                "type": "string"
+              },
+              "details": {
+                "type": "array",
+                "items": {}
+              },
+              "inkPalettes": {
+                "type": "array",
+                "items": {}
+              },
+              "threadLibraries": {
+                "type": "array",
+                "items": {}
+              },
+              "isStockArtOrg": {
+                "type": "boolean"
+              },
+              "watermark": {
+                "type": "object",
+                "properties": {
+                  "watermarkId": {
+                    "type": "string"
+                  },
+                  "active": {
+                    "type": "boolean"
+                  },
+                  "text": {
+                    "type": "string"
+                  },
+                  "textSize": {
+                    "type": "number"
+                  },
+                  "darkText": {
+                    "type": "boolean"
+                  },
+                  "opacity": {
+                    "type": "number"
+                  },
+                  "rotation": {
+                    "type": "number"
+                  },
+                  "repeat": {
+                    "type": "boolean"
+                  },
+                  "deleted": {
+                    "type": "boolean"
+                  },
+                  "createdBy": {
+                    "type": "string"
+                  },
+                  "createdDate": {
+                    "type": "string"
+                  },
+                  "modifiedBy": {
+                    "type": "string"
+                  },
+                  "modifiedDate": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "watermarkId",
+                  "active",
+                  "text",
+                  "textSize",
+                  "darkText",
+                  "opacity",
+                  "rotation",
+                  "repeat",
+                  "deleted",
+                  "createdBy",
+                  "createdDate",
+                  "modifiedBy",
+                  "modifiedDate"
+                ]
+              },
+              "imageArtGuid": {
+                "type": "string"
+              },
+              "imageAssetGuid": {
+                "type": "string"
+              },
+              "imageAssetExts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "extension": {
+                      "type": "string"
+                    },
+                    "height": {
+                      "type": "number"
+                    },
+                    "width": {
+                      "type": "number"
+                    },
+                    "memorySize": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "extension",
+                    "height",
+                    "width",
+                    "memorySize"
+                  ]
+                }
+              },
+              "decorationMethods": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "decorationMethodId": {
+                      "type": "string"
+                    },
+                    "deleted": {
+                      "type": "boolean"
+                    },
+                    "createdDate": {
+                      "type": "string"
+                    },
+                    "modifiedBy": {
+                      "type": "string"
+                    },
+                    "modifiedDate": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decorationMethodId",
+                    "deleted",
+                    "createdDate",
+                    "modifiedBy",
+                    "modifiedDate"
+                  ]
+                }
+              },
+              "storageUsed": {
+                "type": "number"
+              },
+              "privateBrandingEnabled": {
+                "type": "boolean"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "graphicDesignSoftwareName": {
+                "type": "string"
+              },
+              "billingPlan": {
+                "type": "string"
+              },
+              "catalogSettings": {
+                "type": "object",
+                "properties": {
+                  "enabled": {
+                    "type": "boolean"
+                  },
+                  "designIdeas": {
+                    "type": "boolean"
+                  },
+                  "clipArt": {
+                    "type": "boolean"
+                  },
+                  "fonts": {
+                    "type": "boolean"
+                  },
+                  "myArt": {
+                    "type": "boolean"
+                  },
+                  "displayNeedHelps": {
+                    "type": "boolean"
+                  },
+                  "displayContactUs": {
+                    "type": "boolean"
+                  },
+                  "headerText": {
+                    "type": "string"
+                  },
+                  "headerDescription": {
+                    "type": "string"
+                  },
+                  "logoSize": {
+                    "type": "number"
+                  },
+                  "buttonColor": {
+                    "type": "string"
+                  },
+                  "headerTextColor": {
+                    "type": "string"
+                  },
+                  "headerBackgroundColor": {
+                    "type": "string"
+                  },
+                  "customLinks": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "url"
+                      ]
+                    }
+                  },
+                  "contactUsNotificationUserIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "designRequestNotificationUserIds": {
+                    "type": "array",
+                    "items": {}
+                  },
+                  "designIdeasSettings": {
+                    "type": "object",
+                    "properties": {
+                      "hiddenKeywords": {
+                        "type": "array",
+                        "items": {}
+                      },
+                      "categoryIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subCategoryIds": {
+                        "type": "array",
+                        "items": {}
+                      }
+                    },
+                    "required": [
+                      "hiddenKeywords",
+                      "categoryIds",
+                      "subCategoryIds"
+                    ]
+                  },
+                  "clipArtSettings": {
+                    "type": "object",
+                    "properties": {
+                      "hiddenKeywords": {
+                        "type": "array",
+                        "items": {}
+                      },
+                      "categoryIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "subCategoryIds": {
+                        "type": "array",
+                        "items": {}
+                      }
+                    },
+                    "required": [
+                      "hiddenKeywords",
+                      "categoryIds",
+                      "subCategoryIds"
+                    ]
+                  },
+                  "myArtSettings": {
+                    "type": "object",
+                    "properties": {
+                      "sectionName": {
+                        "type": "string"
+                      },
+                      "displayStockArtFirst": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "sectionName",
+                      "displayStockArtFirst"
+                    ]
+                  },
+                  "designRequestForm": {
+                    "type": "object",
+                    "properties": {
+                      "customFields": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "required": {
+                              "type": "boolean"
+                            },
+                            "options": {
+                              "type": "array",
+                              "items": {
+                                "type": "string"
+                              }
+                            },
+                            "type": {
+                              "type": "string"
+                            },
+                            "label": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "required",
+                            "options",
+                            "type",
+                            "label",
+                            "value"
+                          ]
+                        }
+                      },
+                      "uploadArt": {
+                        "type": "object",
+                        "properties": {
+                          "enabled": {
+                            "type": "boolean"
+                          },
+                          "description": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "enabled",
+                          "description"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "customFields",
+                      "uploadArt"
+                    ]
+                  }
+                },
+                "required": [
+                  "enabled",
+                  "designIdeas",
+                  "clipArt",
+                  "fonts",
+                  "myArt",
+                  "displayNeedHelps",
+                  "displayContactUs",
+                  "headerText",
+                  "headerDescription",
+                  "logoSize",
+                  "buttonColor",
+                  "headerTextColor",
+                  "headerBackgroundColor",
+                  "customLinks",
+                  "contactUsNotificationUserIds",
+                  "designRequestNotificationUserIds",
+                  "designIdeasSettings",
+                  "clipArtSettings",
+                  "myArtSettings",
+                  "designRequestForm"
+                ]
+              },
+              "isBetaUser": {
+                "type": "boolean"
+              },
+              "reactivationSuccess": {
+                "type": "boolean"
+              },
+              "deleted": {
+                "type": "boolean"
+              },
+              "createdDate": {
+                "type": "string"
+              },
+              "modifiedBy": {
+                "type": "string"
+              },
+              "modifiedDate": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "organizationId",
+              "name",
+              "uri",
+              "organizationColorDisclaimer",
+              "termsAndConditions",
+              "details",
+              "inkPalettes",
+              "threadLibraries",
+              "isStockArtOrg",
+              "watermark",
+              "imageArtGuid",
+              "imageAssetGuid",
+              "imageAssetExts",
+              "decorationMethods",
+              "storageUsed",
+              "privateBrandingEnabled",
+              "phone",
+              "graphicDesignSoftwareName",
+              "billingPlan",
+              "catalogSettings",
+              "isBetaUser",
+              "reactivationSuccess",
+              "deleted",
+              "createdDate",
+              "modifiedBy",
+              "modifiedDate"
+            ]
+          }
+        }
+      },
+      "required": [
+        "loggedInUser",
+        "organizations"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

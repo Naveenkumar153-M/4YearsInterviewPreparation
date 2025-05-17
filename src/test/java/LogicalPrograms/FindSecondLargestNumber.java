@@ -1,10 +1,6 @@
 package LogicalPrograms;
 
-import org.testng.annotations.Test;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Random;
+import java.util.*;
 
 public class FindSecondLargestNumber {
 
@@ -12,23 +8,29 @@ public class FindSecondLargestNumber {
         int[] number = {25,44,66,10,105,15,50};
         int [] output = new int[number.length];
 
-        int leftLimit = 97; // letter 'a'
-        int rightLimit = 122; // letter 'z'
-        int targetStringLength = 8;
-        StringBuilder buffer = new StringBuilder(targetStringLength);
-        for (int i = 0; i < targetStringLength; i++) {
-            int randomLimitedInt = leftLimit + (int)
-                    (new Random().nextFloat() * (rightLimit - leftLimit));
-            buffer.append((char) randomLimitedInt);
+        int largestNumber=number[0];
+        int secondLargestValue=0;
+        for (int i=1;i<number.length;i++){
+            if (number[i]>largestNumber){
+                secondLargestValue=largestNumber;
+                largestNumber=number[i];
+            }
         }
-        String strRandomID = new StringBuilder("-").append(buffer).toString();
-        System.out.println(strRandomID.toUpperCase());
+        System.out.println(largestNumber);
+        System.out.println(secondLargestValue);
+
+        //By Using Array Sorting
+        Arrays.sort(number);
+        System.out.println(number[number.length-2]);
+
+
+
+
+
+
+
 
 }
-//    @Test
-//    public static String getRandomString() {
-//
-//        return strRandomID.toUpperCase();
-//    }
+
 }
 
