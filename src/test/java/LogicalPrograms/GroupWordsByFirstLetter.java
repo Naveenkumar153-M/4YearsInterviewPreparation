@@ -9,7 +9,7 @@ public class GroupWordsByFirstLetter {
 
         for(String str:input){
             char key=str.charAt(0);
-            map.computeIfAbsent(key,k->new ArrayList<>()).addAll(List.of(str));
+            map.computeIfAbsent(key,k->new ArrayList<>()).add(str);
         }
 
         System.out.println(map);
